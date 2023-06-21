@@ -10,8 +10,19 @@ class User{
 
 /*User Management*/
  const createUser=()=>{
-     let createdUser = new User('','','');
+
+     const fullName=$('#full-name').val();
+     const email=$('#register-email').val();
+     const password=$('#register-password').val();
+
+     let createdUser = new User(fullName,email,password);
+     let existUserData=userArr.find(e=>e.email=='');
+     if (existUserData){
+         alert('User email already exist!');
+         return;
+     }
      userArr.push(createdUser);
+     console.log(userArr);
  }
  /*User Management*/
 const clearAndLoad=(element)=>{
