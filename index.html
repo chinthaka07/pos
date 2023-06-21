@@ -12,7 +12,8 @@
 
 </head>
 <body>
-<div class="container">
+<!--start login process
+<div class="container" id="login-context">
     <div class="login-main-outer">
         <div class="login-inner">
             <h2 class="login-text">Login</h2>
@@ -38,7 +39,7 @@
                                style="width: 100%!important;">
                     </div>
                 </div>
-                <hr>
+
                 <div class="col-12">
                     <br>
                     <div class="form-group">
@@ -50,14 +51,14 @@
         </div>
     </div>
 </div>
+end login process-->
 
-<!--end login process-->
+<!--start register process-->
 
-<!--start login process-->
-
-<div class="container">
+<div class="container" id="register-context">
     <div class="login-main-outer">
         <div class="login-inner">
+            <br>
             <h2 class="login-text">Signup</h2>
             <hr>
 
@@ -83,7 +84,7 @@
                 <div class="col-12">
                     <br>
                     <div class="form-group">
-                        <input type="button" value="Sign up" class="btn btn-success"
+                        <input type="button" value="Sign up" class="btn btn-success" onclick="createUser()"
                                style="width: 100%!important;">
                     </div>
                 </div>
@@ -101,9 +102,9 @@
     </div>
 </div>
 
-<!--end login process-->
+<!--end register process-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
